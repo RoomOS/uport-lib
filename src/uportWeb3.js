@@ -69,11 +69,11 @@ const UportWeb3 = (dappNameArg, opts = {}) => {
     const subProviderOpts = {
       msgServer: msgServer,
       uportConnectHandler: handleURI(isOnMobile)(qrdisplay),
-      ethUriHandler: handleURI(isOnMobile)(qrdisplay)
+      ethUriHandler: handleURI(isOnMobile)(qrdisplay),
+      closeQR: qrdisplay.closeQr.bind(qrdisplay)
       // TODO add this back in
-      // closeQR: qrdisplay.closeQr.bind(qrdisplay),
-      // isQRCancelled: qrdisplay.isQRCancelled.bind(qrdisplay),
-      // resetQRCancellation: qrdisplay.resetQRCancellation.bind(qrdisplay)
+      //isQRCancelled: qrdisplay.isQRCancelled.bind(qrdisplay),
+      //resetQRCancellation: qrdisplay.resetQRCancellation.bind(qrdisplay)
     }
 
     const subprovider = new UportSubprovider(subProviderOpts)
