@@ -23,6 +23,11 @@
   [![devDependency Status][david-dev-image]][david-dev-url]
   [![peerDependency Status][david-peer-image]][david-peer-url]
 -->
+## WARNING: uport-lib renamed uport-connect
+
+As of February 2017 our library uport-lib has been renamed uport-connect on npm and our new repo can be found here https://github.com/uport-project/uport-connect. From February 2017 onwards, all functionality, future features, support, and additional details can be found in uport-connect.
+
+---------------------------------------------
 
 # Introduction
 
